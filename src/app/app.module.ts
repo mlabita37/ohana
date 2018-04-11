@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { MaterialModule } from './material/material.module';
+import {Ng2PageScrollModule} from 'ng2-page-scroll';
+
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -18,7 +20,8 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
-    MaterialModule
+    MaterialModule,
+    Ng2PageScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]

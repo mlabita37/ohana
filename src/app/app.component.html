@@ -3,23 +3,24 @@
       <div id="logo">
       <img src="/assets/images/EandM-3.png">
   </div>
-<!--     <span class="spacer"></span> -->
-    <button mat-button>Schedule</button>
-    <button mat-button>Cabins</button>
-    <button mat-button>Travel</button>
-    <button mat-button>Activities</button>
-    <button mat-button>Pack List</button>
-    <button mat-button>Registry</button>
-    <button mat-button>Contact</button>
-
+  <button mat-button [matMenuTriggerFor]="menu">
+    <i class="material-icons" style="font-size: 50px">menu</i>
+  </button>
+      <mat-menu #menu="matMenu">
+          <a class="nav" mat-menu-item pageScroll href="#schedule">Schedule</a>
+          <a class="nav" mat-menu-item pageScroll href="#cabins">Cabins</a>
+          <a class="nav" mat-menu-item pageScroll href="#travel">Travel</a>
+          <a class="nav" mat-menu-item pageScroll href="#activities">Activities</a>
+          <a class="nav" mat-menu-item pageScroll href="#pack-list">Pack List</a>
+          <a class="nav" mat-menu-item pageScroll href="#registry">Registry</a>
+          <a class="nav" mat-menu-item pageScroll href="#contact">Contact</a>
+      </mat-menu>
   </mat-toolbar-row>
 </mat-toolbar>
 <div id="banner">
-  <img src="/assets/images/tree.png" alt="">
-  <!-- <img src="/assets/images/camp-banner-7-forestgreen.png"> -->
-<!--   <img src="/assets/images/camp-banner-11.png"> -->
+  <img src="/assets/images/tree.png" class="tree">
 Welcome To Our Camp Wedding
-<img src="/assets/images/tree.png" alt="">
+<img src="/assets/images/tree.png" class="tree">
 </div>
 <section class="section parallax parallax-1">
   <div class="container">
@@ -43,12 +44,11 @@ Welcome To Our Camp Wedding
 </section>
 <section class="section parallax parallax-2">
   <div class="container">
-<!--     <h1>Schedule</h1> -->
   </div>
 </section>
 <section class="section content">
   <div class="container">
-    <a name="schedule"><div class="title">Schedule</div></a>
+    <div class="title" id="schedule">Schedule</div>
     <hr class="fancy">
     <div class="heading mt25">Friday, June 15th</div>
     <div class="camp-icons">
@@ -63,8 +63,8 @@ Welcome To Our Camp Wedding
       <div class="form-control">6:00PM - Welcome Dinner</div>
       <div class="form-control">8:00PM - Campfire, Smores, and late night Libations</div>
     </div>
-    <hr class="fancy">
-    <div class="heading">Saturday, June 16th</div>
+    <!-- <hr class="fancy"> -->
+    <div class="heading mt60">Saturday, June 16th</div>
     <div class="camp-icons">
         <img class="fire" src="/assets/images/swimmer-3.png">
         <img class="fire" src="/assets/images/rings-2.png">
@@ -80,8 +80,8 @@ Welcome To Our Camp Wedding
       <div class="form-control">7:00PM-10:00PM - Dancing, Drinking, and Debauchery</div>
       <div class="form-control">10:00PM - Late Night Camp Fire</div>
     </div>
-    <hr class="fancy">
-    <div class="heading">Sunday, June 16th</div>
+    <!-- <hr class="fancy"> -->
+    <div class="heading mt60">Sunday, June 17th</div>
     <div class="camp-icons">
         <img class="fire" src="/assets/images/sunrise.png">
         <img class="fire" src="/assets/images/breakfast-4.png">
@@ -103,8 +103,8 @@ Welcome To Our Camp Wedding
 <section class="section content">
   <div class="container">
     <div class="info">
-      <div class="title">Cabins</div>
-      <hr class="fancy w40">
+      <div class="title" id="cabins">Cabins</div>
+      <hr class="fancy">
       <p class="form-control large">
       Ohana is a fully functional summer camp, in fact camp starts the day after we leave! All activities and events will take place on-site, and those staying at the camp will have everything within walking distance. There are a total of 20 cabins that can house 86 guests and 6 tents that hold another 24 more. Price are broken down as the following:
       </p>
@@ -122,45 +122,43 @@ Welcome To Our Camp Wedding
           </tr>
         </tbody>
       </table>
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            See photos of Cabins
+          </mat-expansion-panel-header>
+          <div>
+              <img src="/assets/images/cabin-5.jpg">
+              <img src="/assets/images/cabin-1.jpg">
+              <img src="/assets/images/cabin-2.jpg">
+              <img src="/assets/images/cabin-4.jpg">
+              <img src="/assets/images/cabin-3.jpg">
+          </div>
+          <mat-action-row>
+      <!--     <button mat-raised-button (click)="close">CLOSE</button> -->
+        </mat-action-row>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            See photos of Tents
+          </mat-expansion-panel-header>
+          <div>
+              <img src="/assets/images/tent-1.jpg">
+              <img src="/assets/images/tent-2.jpg">
+              <img src="/assets/images/tent-3.jpg">
+              <img src="/assets/images/tent-4.jpg">
+              <img src="/assets/images/tent-5.jpg">
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
 
-<mat-accordion>
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      See photos of Cabins
-    </mat-expansion-panel-header>
-    <div>
-        <img src="/assets/images/cabin-5.jpg">
-        <img src="/assets/images/cabin-1.jpg">
-        <img src="/assets/images/cabin-2.jpg">
-        <img src="/assets/images/cabin-4.jpg">
-        <img src="/assets/images/cabin-3.jpg">
+      <div class="header mt60">
+        <a class="register" href="https://alohafoundation.org/ohana/wedding-of-erin-williams-and-michael-labita/">
+          Click Here To Register For Your Cabin Today!!!
+        </a>
+      </div>
     </div>
-    <mat-action-row>
-<!--     <button mat-raised-button (click)="close">CLOSE</button> -->
-  </mat-action-row>
-  </mat-expansion-panel>
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      See photos of Tents
-    </mat-expansion-panel-header>
-    <div>
-        <img src="/assets/images/tent-1.jpg">
-        <img src="/assets/images/tent-2.jpg">
-        <img src="/assets/images/tent-3.jpg">
-        <img src="/assets/images/tent-4.jpg">
-        <img src="/assets/images/tent-5.jpg">
-    </div>
-  </mat-expansion-panel>
-</mat-accordion>
-
-<div class="header mt60">
-  <a href="https://alohafoundation.org/ohana/wedding-of-erin-williams-and-michael-labita/">
-    Click Here To Register For Your Cabin Today!!!
-  </a>
-<!-- <a class="waves-effect waves-light btn-large">Click Here To Register/Pay For Your Cabin Today!</a> -->
-</div>
-    </div>
-  </div>
+  </div><!--End Container-->
 </section>
 
 <section class="section parallax parallax-4">
@@ -171,8 +169,8 @@ Welcome To Our Camp Wedding
 <section class="section content">
   <div class="container">
     <div class="travel">
-      <div class="title">Travel</div>
-      <hr class="fancy w20">
+      <div class="title" id="travel">Travel</div>
+      <hr class="fancy">
       <div class="heading fnt">From NJ and NYC - Est. 4h 30min (280 miles)</div>
         <div class="directions large mt25 mb60">
           Starting in NJ, take NJ-4E to I-95 N. Use the right two lanes to take Exit #1 C-D for Albany. Head North toward Albany.
@@ -205,12 +203,12 @@ Welcome To Our Camp Wedding
 
 <section class="section content">
   <div class="container">
-    <div class="full">
-      <div class="title">Activities</div>
-      <hr class="fancy w20">
+    <div class="col-4">
+      <div class="title" id="activities">Activities</div>
+      <hr class="fancy">
     </div>
       <div class="heading mb25">
-        Camp Ohana Offers the following activites both outdoors and in their game room in the main lodge.
+        Camp Ohana offers the following activites both outdoors and in their game room in the main lodge.
         All activities include necessary equipment:
       </div>
       <mat-grid-list cols="4" rowHeight="1:1.5">
@@ -253,8 +251,8 @@ Welcome To Our Camp Wedding
 
 <section class="section content">
   <div class="container">
-    <div class="title">What To Pack</div>
-      <hr class="fancy w20">
+    <div class="title" id="pack-list">What To Pack</div>
+      <hr class="fancy">
     <div class="info">
       <p class="form-control large">
         There is NO Wifi, bring board games or a good book!
@@ -277,8 +275,8 @@ Welcome To Our Camp Wedding
 <section class="section content">
   <div class="container">
     <div class="travel">
-      <div class="title">Registry</div>
-      <hr class="fancy w20">
+      <div class="title" id="registry">Registry</div>
+      <hr class="fancy">
     </div>
       <div class="heading">
       If you wish to buy a gift, we are registered at the following locations:
