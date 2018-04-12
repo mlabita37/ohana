@@ -150,44 +150,47 @@ section.section.parallax-7 {
   text-align: center;
   font-family: Pinewood;
   color: rgb(116,76,40);
+  font-size: 2em;
 }
 
 .tree {
   margin-bottom: -6px;
+  max-width: 10%;
+  display: none;
 }
 
 #heart {
-    display: inline-block;
-    margin: 0 auto;
-    height: 18px;
-    animation: grow 2s infinite;
-    transform-origin: center;
+  display: inline-block;
+  margin: 0 auto;
+  height: 18px;
+  animation: grow 2s infinite;
+  transform-origin: center;
 }
 
 .title {
   margin: 0 auto;
   text-align: center;
-  font-size: 60px;
+  font-size: 3em;
 }
 
 .info {
   margin: 0 auto 30px;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: 'Loved by the King', cursive;
-  width: 50%;
+  width: 100%;
 }
 
 .camp-icons {
   margin: 20px auto 40px;
   text-align: center;
-  width: 50%;
+  width: 100%;
 }
 
 .heading {
   margin: 0 auto;
   text-align: center;
-  font-size: 50px;
+  font-size: 2.5em;
   color: rgb(116,76,40);
 }
 
@@ -197,27 +200,26 @@ section.section.parallax-7 {
 }
 
 hr.fancy {
-    margin: 10px auto 60px;
-    overflow: visible;
-    padding: 0;
-    border: none;
-    border-top: medium double #333;
-    color: #333;
-    text-align: center;
-/*    width: 14%;*/
-    width: 14%;
-    color: forestgreen;
-    font-size: 16px;
+  margin: 10px auto 60px;
+  overflow: visible;
+  padding: 0;
+  border: none;
+  border-top: medium double #333;
+  color: #333;
+  text-align: center;
+  width: 30%;
+  color: forestgreen;
+  font-size: 16px;
 }
 
 hr.fancy:after {
-    content: "§";
-    display: inline-block;
-    position: relative;
-    top: -0.7em;
-    font-size: 1.5em;
-    padding: 0 0.25em;
-    background: white;
+  content: "§";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: white;
 }
 
 .form-control {
@@ -230,10 +232,7 @@ hr.fancy:after {
 }
 
 .directions {
-  font-size: 2em;
-}
-
-.large {
+  font-size: 1em;
   width: 74%;
   margin: 0 auto;
   text-align: center;
@@ -242,7 +241,10 @@ hr.fancy:after {
 .cabins {
   margin: 0 auto;
   width: 74%;
+}
 
+.travel, .registry {
+  font-size: 1.25em;
 }
 
 .activities {
@@ -258,7 +260,7 @@ hr.fancy:after {
 }
 
 .mat-expansion-panel-header {
-    font-size: 20px;
+    font-size: 0.75em;
 }
 
 /*-  MARGINS, ETC.
@@ -303,54 +305,46 @@ hr.fancy:after {
 
 /*-  MEDIA QUERIES
 ----------------------------------------------------------------------*/
-@media all and (min-width: 400px) {
-  #banner {
-    font-size: 1.5em;
-  }
-
-  .tree {
-    max-width: 5%;
-  }
-
-  .info {
-    width: 100%;
-  }
-
-  .heading {
-    font-size: 2em;
-  }
-}
-
 @media all and (min-width: 600px) {
   section.section h2 {
-    font-size: 42px;
   }
 
   section.section.parallax h1 {
-    font-size: 96px;
   }
 
   #banner {
-    font-size: 2em;
+  }
+
+  .tree {
+    display: inline-block;
+  }
+
+  .info {
+    width: 50%;
   }
 
   .heading {
-    font-size: 3em;
+  }
+
+  .camp-icons {
+    width: 50%;
   }
 }
 
 @media all and (min-width: 960px) {
-  section.section.parallax h1 {
-    font-size: 120px;
-  }
-
   #banner {
-    font-size: 3em;
   }
 }
 
 @media all and (min-width: 1200px) {
   #banner {
-    font-size: 4em;
+  }
+
+  .heading {
+    font-size: 50px;
+  }
+
+  .title {
+    font-size: 3em;
   }
 }
