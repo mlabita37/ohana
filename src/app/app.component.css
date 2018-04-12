@@ -1,8 +1,11 @@
 @font-face {
   font-family: 'Pinewood';
-  src: url('https://www.michael-labita.com/fonts/pinewood.woff2') format('woff2'), /* Super Modern Browsers */
-       url('https://www.michael-labita.com/fonts/pinewood.woff') format('woff'), /* Pretty Modern Browsers */
-       url('https://www.michael-labita.com/fonts/pinewood.ttf')  format('truetype'), /* Safari, Android, iOS */
+  src: url('https://www.michael-labita.com/fonts/Pinewood.eot'); /* IE9 Compat Modes */
+  src: url('https://www.michael-labita.com/fonts/Pinewood.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://www.michael-labita.com/fonts/Pinewood.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://www.michael-labita.com/fonts/Pinewood.woff') format('woff'), /* Pretty Modern Browsers */
+       url('https://www.michael-labita.com/fonts/Pinewood.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('https://www.michael-labita.com/fonts/Pinewood.svg#Pinewood') format('svg'); /* Legacy iOS */
 }
 
 /*-  MAIN
@@ -42,6 +45,11 @@ a.register:hover {
   cursor: pointer;
   text-decoration: underline;
 }
+
+.container {
+  margin: 0 auto;
+}
+
 /*-  NAV
 ----------------------------------------------------------------------*/
 #nav {
@@ -66,12 +74,8 @@ a.register:hover {
   width: 10% !important;
 }
 
-/*-  CONTENT
+/*-  SECTIONS
 ----------------------------------------------------------------------*/
-.container {
-  margin: 0 auto;
-}
-
 section.section:last-child {
   margin-bottom: 0;
 }
@@ -145,6 +149,8 @@ section.section.parallax-7 {
   background-image: url("assets/images/ohana-nightime.jpg");
 }
 
+/*-  COLUMNS
+----------------------------------------------------------------------*/
 #banner {
   margin: 80px auto;
   text-align: center;
@@ -243,15 +249,16 @@ hr.fancy:after {
   width: 74%;
 }
 
-.travel, .registry {
+.travel,
+.registry,
+.activities {
   font-size: 1.25em;
 }
 
-.activities {
+.sports {
   margin: 0 auto;
   text-align: center;
   list-style-type: none;
-  font-size: 2em;
 }
 
 .mat-expansion-panel {
@@ -263,10 +270,10 @@ hr.fancy:after {
     font-size: 0.75em;
 }
 
-/*-  MARGINS, ETC.
+/*-  COLUMNS
 ----------------------------------------------------------------------*/
 .col-2 {
-  width: 49%;
+  width: 100%;
   display: inline-block;
 }
 
@@ -275,6 +282,8 @@ hr.fancy:after {
   text-align: center;
 }
 
+/*-  MARGINS, ETC
+----------------------------------------------------------------------*/
 .mt25 {
   margin-top: 25px;
 }
@@ -295,17 +304,13 @@ hr.fancy:after {
   width: 40% !important;
 }
 
-.underline {
-  text-decoration: underline;
-}
-
-.travel-header {
-  font-size: 2.25em;
-}
-
 /*-  MEDIA QUERIES
 ----------------------------------------------------------------------*/
 @media all and (min-width: 600px) {
+  section.section.parallax h1 {
+    font-size: 48px;
+  }
+
   section.section h2 {
   }
 
@@ -328,6 +333,11 @@ hr.fancy:after {
 
   .camp-icons {
     width: 50%;
+  }
+
+  .col-4 {
+    width: 25%;
+    display: inline-block;
   }
 }
 

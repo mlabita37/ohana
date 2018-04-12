@@ -4,7 +4,7 @@
       <img src="/assets/images/EandM-3.png">
   </div>
   <button mat-button [matMenuTriggerFor]="menu">
-    <i class="material-icons" style="font-size: 50px">menu</i>
+    <i class="material-icons">menu</i>
   </button>
       <mat-menu #menu="matMenu">
           <a class="nav" mat-menu-item pageScroll href="#schedule">Schedule</a>
@@ -205,14 +205,12 @@ Welcome To Our Camp Wedding
       <div class="title" id="activities">Activities</div>
       <hr class="fancy">
     </div>
-      <div class="heading mb25">
+      <div class="heading activities mb25">
         Camp Ohana offers the following activites both outdoors and in their game room in the main lodge.
         All activities include necessary equipment:
       </div>
-      <mat-grid-list cols="4" rowHeight="1:1.5">
-        <mat-grid-tile>&nbsp;</mat-grid-tile>
-        <mat-grid-tile>
-          <ul class="activities">
+      <div class="col-2">
+          <ul class="sports">
             <li>9-hole Disc Golf</li>
             <li>Badminton</li>
             <li>Basketball</li>
@@ -223,9 +221,9 @@ Welcome To Our Camp Wedding
             <li>Horseshoes</li>
             <li>Kickball</li>
           </ul>
-        </mat-grid-tile>
-        <mat-grid-tile>
-          <ul class="activities">
+      </div>
+      <div class="col-2 mt60">
+          <ul class="sports">
             <li>Ping Pong</li>
             <li>Soccer</li>
             <li>Shuffleboard Table</li>
@@ -236,9 +234,7 @@ Welcome To Our Camp Wedding
             <li>Walking trails</li>
             <li>Whiffle Ball</li>
           </ul>
-        </mat-grid-tile>
-        <mat-grid-tile>&nbsp;</mat-grid-tile>
-      </mat-grid-list>
+      </div>
   </div>
 </section>
 
