@@ -13,7 +13,6 @@
 body {
   font-family: 'Loved by the King', cursive;
   color: #2E8B57;
-  font-size: 16px;
 }
 
 h1 {
@@ -39,6 +38,7 @@ a.nav:hover {
 
 a.register {
   color: 0000FF;
+  font-size: 2rem;
 }
 
 a.register:hover {
@@ -53,7 +53,7 @@ a.register:hover {
 
 .list-group-item {
   border: none;
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 
 .table td,
@@ -71,6 +71,25 @@ a.register:hover {
   border-right: 0.75px solid forestgreen;
 }
 
+.navbar-brand {
+  padding-left: 10px;
+}
+
+.navbar-light {
+  background-color: forestgreen;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+.navbar-toggler:not(disabled):not(disbled) {
+  background-color: #ffffff;
+}
+
+.align-right {
+  text-align: right;
+}
 /*-  NAV
 ----------------------------------------------------------------------*/
 #nav {
@@ -172,18 +191,14 @@ section.section.parallax-7 {
 
 /*-  COLUMNS
 ----------------------------------------------------------------------*/
-#banner {
-  margin: 80px auto;
-  text-align: center;
-  font-family: Pinewood;
-  color: rgb(116,76,40);
-  font-size: 32px;
+.tree {
+  display: none;
 }
 
-.tree {
-  margin-bottom: -6px;
-  max-width: 10%;
-  display: none;
+#banner {
+  font-family: Pinewood;
+  color: rgb(116,76,40);
+  font-size: 2rem;
 }
 
 #heart {
@@ -200,13 +215,9 @@ section.section.parallax-7 {
   font-size: 48px;
 }
 
-/*.info {
-  margin: 0 auto 30px;
-  text-align: center;
-  font-size: 24px;
-  font-family: 'Loved by the King', cursive;
-  width: 100%;
-}*/
+.table {
+  font-size: 1.5rem;
+}
 
 .camp-icons {
   margin: 20px auto 40px;
@@ -224,6 +235,11 @@ section.section.parallax-7 {
 .fire {
   display: inline-block;
   padding: 0 6px;
+}
+
+.tent {
+  margin-top: 14px;
+  padding-left: 7px;
 }
 
 hr.fancy {
@@ -249,37 +265,15 @@ hr.fancy:after {
   background: white;
 }
 
-.form-control {
-  font-size: 16px;
-  padding: 10px 0;
-}
-
-.form-control-2 {
-  font-size: 32px;
-}
-
-.directions {
-  font-size: 16px;
-  width: 74%;
-  margin: 0 auto;
-  text-align: center;
-}
-
+.directions,
+.packing,
 .cabins {
-  margin: 0 auto;
-  width: 74%;
+  font-size: 1.5rem;
+  color: forestgreen;
 }
 
-.travel,
-.registry,
-.activities {
-  font-size: 20px;
-}
-
-.sports {
-  margin: 0 auto;
-  text-align: center;
-  list-style-type: none;
+.brown-text {
+  color: rgb(116,76,40);
 }
 
 .mat-expansion-panel {
@@ -288,7 +282,7 @@ hr.fancy:after {
 }
 
 .mat-expansion-panel-header {
-    font-size: 12px;
+    font-size: 1.25rem;
 }
 
 /*-  COLUMNS
@@ -326,9 +320,16 @@ hr.fancy:after {
   width: 40% !important;
 }
 
+.pd100 {
+  padding: 100px 0;
+}
+
 /*-  MEDIA QUERIES
 ----------------------------------------------------------------------*/
 @media all and (min-width: 600px) {
+  .html {
+    font-size: 1.5rem;
+  }
   section.section.parallax h1 {
     font-size: 48px;
   }
@@ -340,10 +341,7 @@ hr.fancy:after {
   }
 
   #banner {
-  }
-
-  .tree {
-    display: inline-block;
+    font-size: 3rem;
   }
 
   .info {
@@ -360,10 +358,22 @@ hr.fancy:after {
   .fire {
     display: inline-block;
   }
+
+  .align-right {
+    text-align: right;
+  }
+
 }
 
 @media all and (min-width: 960px) {
   #banner {
+    font-size: 3.5rem;
+  }
+
+  .tree {
+    vertical-align: middle;
+    max-width: 10%;
+    display: inline-block;
   }
 }
 
