@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Pinewood';
-  src: url('https://www.michael-labita.com/fonts/Pinewood.eot'); /* IE9 Compat Modes */
-  src: url('https://www.michael-labita.com/fonts/Pinewood.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('https://www.michael-labita.com/fonts/Pinewood.woff2') format('woff2'), /* Super Modern Browsers */
-       url('https://www.michael-labita.com/fonts/Pinewood.woff') format('woff'), /* Pretty Modern Browsers */
-       url('https://www.michael-labita.com/fonts/Pinewood.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('https://www.michael-labita.com/fonts/Pinewood.svg#Pinewood') format('svg'); /* Legacy iOS */
+  src: url('https://www.michael-labita.com/fonts/pinewood.eot'); /* IE9 Compat Modes */
+  src: url('https://www.michael-labita.com/fonts/pinewood.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('https://www.michael-labita.com/fonts/pinewood.woff2') format('woff2'), /* Super Modern Browsers */
+       url('https://www.michael-labita.com/fonts/pinewood.woff') format('woff'), /* Pretty Modern Browsers */
+       url('https://www.michael-labita.com/fonts/pinewood.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('https://www.michael-labita.com/fonts/pinewood.svg#Pinewood') format('svg'); /* Legacy iOS */
 }
 
 /*-  MAIN
@@ -51,25 +51,8 @@ a.register:hover {
   margin: 0 auto;
 }
 
-.list-group-item {
-  border: none;
-  font-size: 1.5rem;
-}
-
-.table td,
-.table th {
-  font-size: 1.35rem;
-}
-
-.borderless tr,
-.borderless td,
-.borderless th {
-    border: none;
-}
-
-.border-right {
-  border-right: 0.75px solid forestgreen;
-}
+/*-  NAV
+----------------------------------------------------------------------*/
 
 .navbar-brand {
   padding-left: 10px;
@@ -77,6 +60,8 @@ a.register:hover {
 
 .navbar-light {
   background-color: forestgreen;
+  font-family: 'Loved by the King', cursive;
+  font-size: 1.5rem;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -87,109 +72,12 @@ a.register:hover {
   background-color: #ffffff;
 }
 
-.align-right {
-  text-align: right;
-}
-/*-  NAV
-----------------------------------------------------------------------*/
-#nav {
-  background-color: #2E8B57;
-  color: #fff;
- }
-
- .ohana-nav {
-  height: 100px !important;
+.list-group-item {
+  border: none;
+  font-size: 1.5rem;
 }
 
-#logo {
-  width: 100%;
-  margin-top: 8px;
-}
-
-.spacer {
-  flex: 1 1 auto;
-}
-
-.cdk-overlay-pane {
-  width: 10% !important;
-}
-
-/*-  SECTIONS
-----------------------------------------------------------------------*/
-section.section:last-child {
-  margin-bottom: 0;
-}
-
-section.section h2 {
-  margin: 0 auto 40px;
-  text-align: center;
-  font-family: 'Loved by the King', cursive;
-}
-
-section.section p {
-  margin-bottom: 40px;
-  font-weight: 300;
-}
-
-section.section p:last-child {
-  margin-bottom: 0;
-}
-
-section.section.content {
-  padding: 40px 0;
-  font-family: 'Loved by the King', cursive;
-}
-
-section.section.parallax {
-  height: 600px;
-  width: 100%;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-section.section.parallax h1 {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 48px;
-/*  line-height: 600px;*/
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-section.section.parallax-1 {
-/*  background-image: url("assets/images/ohana-night.jpg");*/
-  background-image: url('assets/images/ohana-ceremony-2.jpg');
-}
-
-section.section.parallax-2 {
-/*  background-image: url('https://alohafoundation.org/wp-content/uploads/2016/09/Ohana-wedding-night.jpg');*/
-  background-image: url("assets/images/adventure-begins.jpg");
-}
-
-section.section.parallax-3 {
-  background-image: url("assets/images/ohana-lake.jpg");
-}
-
-section.section.parallax-4 {
-  background-image: url("assets/images/erin-mike-1.jpg");
-}
-
-section.section.parallax-5 {
-  background-image: url("assets/images/ohana-hall.jpg");
-}
-
-section.section.parallax-6 {
-  background-image: url("assets/images/EandM-rehearsal-xmas.jpg");
-}
-
-section.section.parallax-7 {
-  background-image: url("assets/images/ohana-nightime.jpg");
-}
-
-/*-  COLUMNS
+/*-  MAIN
 ----------------------------------------------------------------------*/
 .tree {
   display: none;
@@ -213,10 +101,6 @@ section.section.parallax-7 {
   margin: 0 auto;
   text-align: center;
   font-size: 48px;
-}
-
-.table {
-  font-size: 1.5rem;
 }
 
 .camp-icons {
@@ -265,6 +149,29 @@ hr.fancy:after {
   background: white;
 }
 
+.table[_ngcontent-c0] td[_ngcontent-c0], .table[_ngcontent-c0] th[_ngcontent-c0] {
+    font-size: 1.75rem;
+}
+
+.table td,
+.table th {
+  font-size: 1.35rem;
+}
+
+.borderless tr,
+.borderless td,
+.borderless th {
+    border: none;
+}
+
+.border-right {
+  border-right: 0.75px solid forestgreen;
+}
+
+.align-right {
+  text-align: right;
+}
+
 .directions,
 .packing,
 .cabins {
@@ -285,17 +192,71 @@ hr.fancy:after {
     font-size: 1.25rem;
 }
 
-/*-  COLUMNS
-----------------------------------------------------------------------*/
-.col-2 {
-  width: 100%;
-  display: inline-block;
+.crate-barrel {
+  margin-top: 30px;
 }
 
-.col-4 {
-  width: 100%;
+/*-  SECTIONS
+----------------------------------------------------------------------*/
+section {
+  font-family: 'Loved by the King', cursive;
+}
+
+section.section:last-child {
+  margin-bottom: 0;
+}
+
+section.section h2 {
+  margin: 0 auto 40px;
   text-align: center;
-  display: inline-block;
+  font-family: 'Loved by the King', cursive;
+  font-size: 5rem;
+}
+
+section.section.parallax {
+  height: 600px;
+  width: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+section.section.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 5rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+section.section.parallax-1 {
+  background-image: url('assets/images/ohana-ceremony-2.jpg');
+}
+
+section.section.parallax-2 {
+  background-image: url("assets/images/adventure-begins.jpg");
+}
+
+section.section.parallax-3 {
+  background-image: url("assets/images/ohana-lake.jpg");
+}
+
+section.section.parallax-4 {
+  background-image: url("assets/images/erin-mike-1.jpg");
+}
+
+section.section.parallax-5 {
+  background-image: url("assets/images/ohana-hall.jpg");
+}
+
+section.section.parallax-6 {
+  background-image: url("assets/images/EandM-rehearsal-xmas.jpg");
+}
+
+section.section.parallax-7 {
+  background-image: url("assets/images/ohana-nightime.jpg");
 }
 
 /*-  MARGINS, ETC
@@ -330,14 +291,9 @@ hr.fancy:after {
   .html {
     font-size: 1.5rem;
   }
-  section.section.parallax h1 {
-    font-size: 48px;
-  }
-
-  section.section h2 {
-  }
 
   section.section.parallax h1 {
+    font-size: 6rem;
   }
 
   #banner {
