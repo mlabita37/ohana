@@ -214,11 +214,9 @@ section.section h2 {
 }
 
 section.section.parallax {
-  height: 800px;
   width: 100%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -318,7 +316,6 @@ section.section.parallax-7 {
   .align-right {
     text-align: right;
   }
-
 }
 
 @media all and (min-width: 960px) {
@@ -330,6 +327,11 @@ section.section.parallax-7 {
     vertical-align: middle;
     max-width: 10%;
     display: inline-block;
+  }
+
+  section.section.parallax {
+    height: 800px;
+    background-attachment: fixed;
   }
 }
 
